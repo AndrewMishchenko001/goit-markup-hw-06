@@ -464,11 +464,18 @@
           </ul>
         </div>
         <div class="form-field footer-conteiner">
-          <label for="mail">Подпишитесь на рассылку</label>
+          <form name = "subscribe">
+          <label  class= "subscribe-label" for="mail">Подпишитесь на рассылку</label>
           <div class="field-btn-container">
-            <input type="email" name="mail" id="mail" placeholder="E-mail" />
-            <button class="form-btn hero-button" type="submit">
-              Подписаться
+            <input  class="input-email" type="email" name="mail" id="mail" placeholder="E-mail" />
+            </form>
+            <button class="hero-button button" type="submit">
+              <span class="sub-text">
+              Подписаться</span>
+              <svg class="sub-icon" width="24" height="24">
+                <use href=""></use>
+
+              </svg>
             </button>
           </div>
         </div>

@@ -555,7 +555,8 @@ body {
   display: flex;
 }
 
-.form-field label {
+.subscribe-label {
+  display: block;
   margin-bottom: 20px;
 
   color: var(--white-color);
@@ -565,10 +566,17 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.form-btn {
+
+.field-btn-container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  height: 50px;
 }
 
-.form-field input {
+.input-email {
+  box-sizing: border-box;
   width: 358px;
   margin: 0;
   margin-right: 12px;
@@ -577,8 +585,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   color: var(--white-color);
+
+  font-size: 16px;
 }
-.form-field input::placeholder {
+.input-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
