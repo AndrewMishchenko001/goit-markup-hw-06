@@ -214,37 +214,6 @@ body {
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
 }
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 528px;
-  min-height: 581px;
-  background-color: var(--background-white);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--timing-process) var(--timing-function),
-    opacity var(--timing-process) var(--timing-function);
-  opacity: 1;
-}
-.modal-container {
-  position: relative;
-}
-.close-btn-modal {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--background-white);
-
-  background: url(../images/close_modal.svg) no-repeat center;
-  margin: 8px;
-  cursor: pointer;
-  text-decoration: none;
-}
 
 .hero-title {
   margin-top: 0;
@@ -263,6 +232,64 @@ body {
 .main-container {
   max-width: 690px;
   padding: 200px 0px;
+}
+
+/* Modal-window */
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--background-white);
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--timing-process) var(--timing-function),
+    opacity var(--timing-process) var(--timing-function);
+  opacity: 1;
+}
+.modal-container {
+  position: relative;
+}
+.close-btn-modal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--background-white);
+
+  margin: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  fill: currentColor;
+  transition: var(--timing-process) var(--timing-function);
+}
+.close-btn-modal:hover,
+.close-btn-modal:focus {
+  color: var(--accent-color);
+}
+.modal-title {
+  margin-top: 40px;
+  margin-bottom: 12px;
+
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+
+  text-align: center;
 }
 
 /* features-list */
@@ -553,6 +580,10 @@ body {
 }
 .field-btn-container {
   display: flex;
+}
+.sub-text {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .subscribe-label {
