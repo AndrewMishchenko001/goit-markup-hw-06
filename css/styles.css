@@ -242,21 +242,56 @@ body {
   left: 50%;
   min-width: 528px;
   min-height: 581px;
-  background-color: var(--background-white);
 
+  background-color: var(--background-white);
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--timing-process) var(--timing-function),
     opacity var(--timing-process) var(--timing-function);
   opacity: 1;
 }
+
 .modal-container {
+  display: block;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 448px;
+}
+
+.form-field-mdl {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+
+  fill: currentColor;
+  color: var(--title-text-color);
+}
+.form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 11px 12px 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 .close-btn-modal {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 8px;
 
   top: 0;
   right: 0;
@@ -266,13 +301,13 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--background-white);
 
-  margin: 8px;
   cursor: pointer;
   text-decoration: none;
   color: #000;
   fill: currentColor;
-  transition: var(--timing-process) var(--timing-function);
+  transition: color var(--timing-process) var(--timing-function);
 }
+
 .close-btn-modal:hover,
 .close-btn-modal:focus {
   color: var(--accent-color);
@@ -280,16 +315,35 @@ body {
 .modal-title {
   margin-top: 40px;
   margin-bottom: 12px;
+  text-align: center;
 
-  color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.17;
 
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.icon-form {
+  position: absolute;
+  display: inline-block;
+  left: 15px;
+  top: 50%;
 
-  text-align: center;
+  width: 18px;
+  height: 18px;
+}
+
+.form-field-mdl:focus-within,
+.form-field-mdl:hover {
+  color: var(--accent-color);
+  transition: color var(--timing-process) var(--timing-function);
+}
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+  transition: var(--timing-function) var(--timing-process);
 }
 
 /* features-list */
