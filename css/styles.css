@@ -242,6 +242,7 @@ body {
   left: 50%;
   min-width: 528px;
   min-height: 581px;
+  border-radius: 4px;
 
   background-color: var(--background-white);
   transform: translate(-50%, -50%) scale(1);
