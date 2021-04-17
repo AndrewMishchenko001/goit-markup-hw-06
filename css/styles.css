@@ -250,6 +250,9 @@ body {
     opacity var(--timing-process) var(--timing-function);
   opacity: 1;
 }
+.form-subcribe {
+  display: flex;
+}
 
 .modal-container {
   display: block;
