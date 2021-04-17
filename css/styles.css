@@ -679,8 +679,8 @@ body {
 
 .footer-conteiner {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 59px;
+  padding-bottom: 59px;
   flex-direction: column;
 }
 .footer-conteiner + .footer-conteiner {
